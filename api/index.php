@@ -11,15 +11,15 @@
 //  This is comment.
 #   This is comment.
 /*  This is Comment.   */ 
-$txt = "Hello world!";
-$x = 5;
-$y = 10.5;
+$x = 5; // global scope
 
-echo $txt;
-echo "<br>";
-echo $x;
-echo "<br>";
-echo $y;
+function myTest() {
+  // using x inside this function will generate an error
+  echo "<p>Variable x inside function is: $x </p>";
+}
+myTest();
+
+echo "<p>Variable x outside function is: $x</p>";
 ?>
 
 </body>

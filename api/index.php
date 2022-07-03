@@ -13,11 +13,11 @@
 /*  This is Comment.   */ 
 $x = 5; // global scope
 
-function myTest() {
+function myTest(x) {
   // using x inside this function will generate an error
   echo "<p>Variable x inside function is: $x </p>";
 }
-myTest();
+myTest(x);
 
 echo "<p>Variable x outside function is: $x</p>";
 ?>

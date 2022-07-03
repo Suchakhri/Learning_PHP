@@ -7,27 +7,28 @@
     <title>PHP on Vercel</title>
 </head>
 <body>
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
+<a href="test_get.php?subject=PHP&web=W3schools.com">Test $GET</a>
 <?php
 //  This is comment.
 #   This is comment.
 /*  This is Comment.   */ 
-class Car {
-    public $color;
-    public $model;
-    public function __construct($color, $model) {
-      $this->color = $color;
-      $this->model = $model;
-    }
-    public function message() {
-      return "My car is a " . $this->color . " " . $this->model . "!";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $name = $_POST['fname'];
+    if (empty($name)) {
+      echo "Name is empty";
+    } else {
+      echo $name;
     }
   }
-  
-  $myCar = new Car("black", "Volvo");
-  echo $myCar -> message();
-  echo "<br>";
-  $myCar = new Car("red", "Toyota");
-  echo $myCar -> message();
+
+echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
+
 ?>
 
 </body>

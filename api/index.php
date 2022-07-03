@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="menu">
-<?php include '/api/menu.php';?>
+<?php include './api/menu.php';?>
 </div>
 
 <h1>Welcome to my home page!</h1>

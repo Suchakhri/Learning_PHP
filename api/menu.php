@@ -1,7 +1,7 @@
 <?php
-echo '<a href="/default.asp">Home</a> -
-<a href="/html/default.asp">HTML Tutorial</a> -
-<a href="/css/default.asp">CSS Tutorial</a> -
-<a href="/js/default.asp">JavaScript Tutorial</a> -
-<a href="default.asp">PHP Tutorial</a>';
+echo '<a href="get.php?subject=PHP&web=HOME">Home</a> -
+<a href="get.php?subject=PHP&web=HTML_Tutorial">HTML Tutorial</a> -
+<a href="get.php?subject=PHP&web=CSS_Tutorial">CSS Tutorial</a> -
+<a href="get.php?subject=PHP&web=JavaScript_Tutorial>JavaScript Tutorial</a> -
+<a href="get.php?subject=PHP&web=PHP_Tutorial">PHP Tutorial</a>';
 ?>

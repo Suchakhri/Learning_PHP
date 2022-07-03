@@ -8,10 +8,19 @@
 </head>
 <body>
 <?php
-$color = "red";
-echo "My car is " . $color . "<br>";
-echo "My house is " . $COLOR . "<br>";
-echo "My boat is " . $coLOR . "<br>";
+//  This is comment.
+#   This is comment.
+/*  This is Comment.   */ 
+$txt = "Hello world!";
+$x = 5;
+$y = 10.5;
+
+echo $txt;
+echo "<br>";
+echo $x;
+echo "<br>";
+echo $y;
 ?>
+
 </body>
 </html>

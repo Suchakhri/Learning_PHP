@@ -15,14 +15,8 @@ E-mail: <input type="text" name="email"><br>
 </form>
 <br />
 <br />
-<h3>POST_METHOD</h3>
-<form action="get.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
 
-<a href="test_get.php?subject=PHP&web=W3schools.com">Test $GET</a>
+
 <?php
 //  This is comment.
 #   This is comment.

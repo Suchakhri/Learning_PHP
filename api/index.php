@@ -7,25 +7,12 @@
     <title>PHP on Vercel</title>
 </head>
 <body>
-<h3>GET_METHOD</h3>
-<form action="get.php" method="get">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
-<br />
-<br />
+<div class="menu">
+<?php include '/api/menu.php';?>
+</div>
 
-
-<?php
-//  This is comment.
-#   This is comment.
-/*  This is Comment.   */ 
-
-
-
-
-?>
-
+<h1>Welcome to my home page!</h1>
+<p>Some text.</p>
+<p>Some more text.</p>
 </body>
 </html>

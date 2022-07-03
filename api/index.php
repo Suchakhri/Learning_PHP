@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP on Vercel</title>
 </head>
 <body>
 <?php
 //  This is comment.
 #   This is comment.
 /*  This is Comment.   */ 
-$x = 5; // global scope
+global $x = 5; // global scope
 
 function myTest(){
   // using x inside this function will generate an error
